@@ -1,2 +1,1 @@
-# sashabashukov.github.io
-БАЖУКОВ СИЛА
+# SashaBashukov.github.io
