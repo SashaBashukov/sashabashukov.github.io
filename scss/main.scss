@@ -35,8 +35,8 @@ img {
 
 // Logo
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 92px;
+  height: 67px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -46,13 +46,15 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-
   ul {
     display: flex;
   }
 
   li {
     padding: 1rem 1.5rem;
+    a{
+      color: $dark-color;
+    }
   }
 
   a {
@@ -64,10 +66,12 @@ img {
     transition: border-color 0.5s;
 
     &:hover {
+      color: $dark-color;
       border-color: $medium-color;
     }
 
     &.current {
+      color: $dark-color;
       border-color: $main-color;
     }
   }
@@ -76,28 +80,34 @@ img {
 // Header
 #header {
   // Header Home
+  background-color:$invise;
   &-home {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
-
     // Header Content
+    .container{
+      background-color:$invise;
+    }
     .header-content {
       text-align: center;
       padding-top: 20%;
+      color: $dark-color;
 
       h1 {
         font-size: 4rem;
         line-height: 1.2;
+        color: $dark-color;
       }
     }
   }
 
   // Header Inner
   &-inner {
-    background: $bg-image no-repeat 20% 30% / cover;
+    background: $bg-image no-repeat 20% 61% / cover;
     height: 5.5rem;
     border-bottom: 3px solid $main-color;
+    flex: 0 1 auto;
   }
 }
 
@@ -105,6 +115,8 @@ img {
 #home {
   // Home Section A
   &-a {
+    background-color: $dark-color;
+    color: $light-color;
     .specials {
       margin-top: 3rem;
       display: grid;
@@ -120,15 +132,19 @@ img {
 
   // Home Section B
   &-b {
+    background-color: $dark-color;
+    color: $light-color;
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-
       li {
         line-height: 2;
-
+        &.stats-icon{
+          color: $main-color;
+        }
         &.stats-title {
           font-size: 1.5rem;
+          
         }
 
         &.stats-number {
@@ -141,7 +157,7 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background: $light-color;
+          background: $dark-color;
         }
 
         &:nth-child(even) {
@@ -153,19 +169,27 @@ img {
 
   // Home Section C
   &-c {
+    background-color:$dark-color;
+    color: $light-color;
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1.5rem;
       text-align: center;
+      i{color: $main-color;}
+      h3{color: $main-color;}
     }
+
   }
 }
 
 // About Sections
 #about {
+  
   // About A
   &-a {
+    background-color: $dark-color;
+    color: $light-color;
     .about-info {
       display: grid;
       grid-template-areas:
@@ -206,6 +230,8 @@ img {
   }
   // About B
   &-b {
+    background-color: $dark-color;
+    color: $light-color;
     .progress {
       overflow: hidden;
       height: 20px;
@@ -223,6 +249,8 @@ img {
   }
   // About C
   &-c {
+    background-color: $dark-color;
+    color: $light-color;
     .about-logos {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -235,6 +263,8 @@ img {
   }
   // About D
   &-d {
+    background-color: $dark-color;
+    color: $light-color;
     .testimonials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -262,10 +292,23 @@ img {
     }
   }
 }
+// Work Sections
+#work{
+ &-a{
+  background-color: $dark-color;
+  color: $light-color;
+  flex: 1 1 71vh;
+ }
 
+
+
+}
 // Contact Page
 #contact {
+
   &-a {
+    background-color: $dark-color;
+    color: $light-color;
     .text-fields {
       display: grid;
       grid-template-areas:
@@ -274,36 +317,62 @@ img {
         'message message';
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
-
+      input{
+        border-radius: 2mm;
+      }
+      textarea{
+        border-radius: 2mm;
+      }
       // Grid Areas
       .name-input {
         grid-area: name;
+        background-color: $dark-color;
+        color: $light-color;
       }
       .subject-input {
         grid-area: subject;
+        background-color: $dark-color;
+        color: $light-color;
       }
       .email-input {
         grid-area: email;
+        background-color: $dark-color;
+        color: $light-color;
       }
       .phone-input {
         grid-area: phone;
+        background-color: $dark-color;
+        color: $light-color;
       }
       .message-input {
         grid-area: message;
         height: 100px;
+        background-color: $dark-color;
+        color: $light-color;
       }
 
       .text-input {
         padding: 0.5rem 1rem;
+        
       }
+
     }
 
     button[type='submit'] {
       width: 50%;
-    }
+      background-color: $dark-color;
+      color: $light-color;
+      border-color: $main-color;
+      height: 8mm;}
   }
 
   &-b {
+    background-color: $dark-color;
+    color: $light-color;
+    i{
+      color: $main-color;
+    }
+    h3{color: $main-color;}
     .contact-info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -312,7 +381,15 @@ img {
   }
 
   &-c {
+    background-color: $dark-color;
+    color: $light-color;
+    .container{
+      background: $main-color;
+      border-radius: 2mm;
+    }
     h1 {
+      background-color: $dark-color;
+      color: $light-color;
       text-align: center;
       font-size: 4rem;
     }
@@ -340,6 +417,7 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
+      color: $light-color;
 
       &:hover {
         background: $main-color;

@@ -3,6 +3,7 @@
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
+  
 }
 
 .lead {
@@ -61,4 +62,31 @@
   background: $main-color;
   display: block;
   margin: 0 auto 1rem auto;
+}
+.btn-dark{
+  background-color: $main-color;
+  border: 3px solid $main-color;
+  color: $main-color;
+  transition: .3s;
+ &:hover {
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: $main-color;
+    color: $dark-color;
+  }
+  70% {
+    transform: scale(.8);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+}
+.work-heigth{
+  display: flex;
+  flex-direction: column;
 }
